@@ -17,8 +17,5 @@ def xyw():
         elif betu == "W":
             w += 1
 
-    print(f"x: {x}, y: {y}, w: {w}")
-
     ossz = x + y - w
-
     return ossz
