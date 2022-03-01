@@ -26,10 +26,6 @@ div#cim{
     border-bottom: 1.5px solid black;
 }
 
-div#cim h1{
-    margin-top: 0;
-}
-
 main{
     width: 800px;
     margin: auto;
