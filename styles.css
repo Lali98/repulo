@@ -7,7 +7,7 @@
     --kek: #063711;
     --sarga: #ffab40;
     --arany: #fed346;
-    --ezust: #8d8d8d;
+    --ezust: #cccccc;
     --bronz: #ce7402;
 }
 
@@ -23,7 +23,7 @@ div#cim{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border-bottom: 2px solid black;
+    border-bottom: 1.5px solid black;
 }
 
 div#cim h1{
@@ -51,6 +51,17 @@ div#vers{
     width: 60%;
     /* border: 3px solid #73AD21; */
     padding: 10px;
+}
+
+main div#vers div#lista{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+main div#vers div#lista p{
+    padding: 0;
+    margin: 0;
 }
 
 main div#menu li{
