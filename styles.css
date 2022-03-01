@@ -36,6 +36,11 @@ main{
     padding: auto;
 }
 
+main div#rep a{
+    color: black;
+    text-decoration: none;
+}
+
 main h2{
     margin-bottom: 0;
 }
