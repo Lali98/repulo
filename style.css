@@ -31,6 +31,9 @@
             transform: translateX(-50%);
             color: white;
         }
+        h2{
+            text-align: left;
+        }
         #szoveg{
             font-size: 10px;
             position: relative;
@@ -73,3 +76,4 @@
         .alsoszoveg{
             color: grey;
         }
+        
