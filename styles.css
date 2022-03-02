@@ -11,6 +11,10 @@
     --bronz: #ce7402;
 }
 
+*{
+    font-family: var(--font);
+}
+
 body{
     margin: 0;
 }
@@ -23,7 +27,7 @@ div#cim{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border-bottom: 1.5px solid black;
+    border-bottom: 2px solid black;
 }
 
 main{
@@ -32,51 +36,79 @@ main{
     padding: auto;
 }
 
+main div#rep{
+    margin-top: 20px;
+    /* border: 2px dotted blue; */
+    height: 215px
+}
+
 main div#rep a{
     color: black;
     text-decoration: none;
 }
 
-main h2{
+main div#rep a div{
+    border: 2px solid black;
+    float: left;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 20px;
+    padding: 10px;
+    background-color: var(--v_zold);
+}
+
+main div#rep a div img{
+    width: 200px;
+}
+
+main div#vandm h2{
+    margin-top: 0;
     margin-bottom: 0;
 }
 
-main div#vers h3, main div#vers h4{
+main div#vandm div#vers h3, main div#vers h4{
     margin: 0;
     padding-bottom: 10px;
     text-align: center;
 }
 
-div#vers{
+main div#vandm div#vers{
     margin: auto;
     width: 60%;
     /* border: 3px solid #73AD21; */
     padding: 10px;
 }
 
-main div#vers div#lista{
-    width: 80%;
+main div#vandm div#vers div#lista{
+    width: 90%;
     margin: auto;
     padding: 10px;
 }
 
-main div#vers div#lista p{
+main div#vandm div#vers div#lista p{
     padding: 0;
     margin: 0;
 }
 
-main div#menu li{
+main div#vandm div#menu{
+    margin-bottom: 75px;
+}
+
+main div#vandm div#menu li{
     float: left;
     list-style: none;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
     border-right: 1px solid black;
 }
 
-main div#menu li:last-child{
+main div#vandm div#menu li:last-child{
     border-right: none;
 }
 
-main div#menu li a{
+main div#vandm div#menu li a{
     color: var(--v_zold);
 }
