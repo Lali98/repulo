@@ -1,0 +1,11 @@
+main div{
+    margin-top: 10px;
+}
+
+a{
+    color: var(--v_zold);
+}
+
+li{
+    padding-top: 5px;
+}
