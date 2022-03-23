@@ -76,3 +76,8 @@ main div#vandm div#menu li:last-child{
 main div#vandm div#menu li a{
     color: var(--v_zold);
 }
+
+#szoveg{
+color: white;
+font-size: 30px;
+}
