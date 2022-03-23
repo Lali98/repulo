@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    background-color: white;
+    background-color: #c6d9ec;
     font-family: 'Parisienne', cursive;
     display: flex;
     flex-direction: column;
@@ -9,12 +9,12 @@ body{
 }
 
 header{
-    background-color: white;
+    background-color: #c6d9ec;
     margin: auto;
-    border-bottom: #a42828 solid 10px;
-    width: 70%;
+    border-bottom: #003366 solid 10px;
+    width: 80%;
     height: 100px;
-    color: #d55d5d;
+    color: #336699;
     font-size: 23px;
 
 }
@@ -26,5 +26,7 @@ li{
 img{
     height: 200px;
     width: 200px;
-margin:auto;
+    margin:auto;
+    border-radius: 50%;
+    border: #003366 solid 3px;
 }
