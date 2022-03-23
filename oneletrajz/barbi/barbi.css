@@ -1,0 +1,16 @@
+h1 {
+    text-align:center; 
+    font-size: 80px;   
+}
+
+*{
+    font-family: 'Mea Culpa', cursive;
+}
+
+body{
+    background-image: url('/kep/rose-barbi.jpg');
+    background-size:100%;
+    font-size: xx-large;
+}
+
+
