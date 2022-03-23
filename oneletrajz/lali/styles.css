@@ -6,6 +6,10 @@ div#cim h1{
     color: white;
 }
 
+#nev{
+    font-weight: bold;
+}
+
 main div ul li{
     list-style-type: none;
 }
