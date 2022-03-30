@@ -1,0 +1,27 @@
+main div{
+    margin-top: 10px;
+}
+
+a{
+    color: var(--v_zold);
+}
+
+#kep{
+    float: left;
+    border: 1px solid black;
+    margin-right: 20px;
+}
+
+#adatok{
+    padding-top: 20px;
+}
+
+h4{
+    margin: 0;
+}
+
+.adat{
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-indent: 15px;
+}
