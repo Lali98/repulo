@@ -1,3 +1,9 @@
+<?php
+include_once('php/Carriers.php');
+
+$carries = new Carriers();
+?>
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -7,7 +13,7 @@
     <title>Repülési statisztikák - Légitársaságok Listája</title>
     <link rel="stylesheet" href="css/alap.css">
     <link rel="stylesheet" href="css/legi.css">
-    <script src="js/legi.js"></script>
+<!--    <script src="js/legi.js"></script>-->
 </head>
 <body>
     <div id="cim">
@@ -18,7 +24,13 @@
             <a href="index.html">Főoldal</a> > <a href="#">Légitársaságok Listája</a>
         </div>
         <ul id="felsor">
-
+            <?php
+                foreach ($carries->getCarriers() as $key=>$carrier)
+                {?>
+                    <li><a><?= $carrier['name'] ?></a></li>
+            <?php
+                }
+            ?>
         </ul>
     </main>
 
