@@ -6,7 +6,7 @@ class Application
         'servername' => 'localhost',
         'username' => 'root',
         'password' => 'Passw123',
-        'dbname' => 'airline'
+        'dbname' => 'flight_stat'
     );
 
     private $connecion;
@@ -49,5 +49,14 @@ class Application
     protected function writeLog($str, $sql)
     {
 
+    }
+
+    protected function isValidId($id): bool
+    {
+        if (is_int($id) && $id > 0)
+        {
+            return true;
+        }
+        return false;
     }
 }

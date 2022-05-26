@@ -6,6 +6,10 @@ a{
     color: var(--v_zold);
 }
 
+li{
+    cursor: default;
+}
+
 #kep{
     float: left;
     border: 1px solid black;
