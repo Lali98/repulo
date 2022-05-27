@@ -1,0 +1,21 @@
+.tartalom{
+    width: 800px;
+    margin: auto;
+    padding: auto;        
+}
+
+.hivatkozas{
+    color: var(--v_zold);
+    text-decoration: underline;
+}
+
+.adat{
+    border: solid 1px;
+    padding: 20px;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
