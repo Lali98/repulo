@@ -62,14 +62,14 @@ $carries = new Carriers();
             {
             ?>
             <h4>A törölt járatok aránya:</h4>
-            <p class="adat"><?= $item['torolt_jaratok_aranya'] ?>%</p>
+            <p class="adat"><?= round($item['torolt_jaratok_aranya'], 1) ?>%</p>
             <?php
             }
             foreach ($carries->getDelay(intval($_GET['cid'])) as $key=>$item)
             {
             ?>
             <h4>Az átlagos járat késés:</h4>
-            <p class="adat"><?= $item['Delay'] ?></p>
+            <p class="adat"><?= round($item['Delay']) ?></p>
             <?php
             }
             foreach ($carries->getMaxCode(intval($_GET['cid'])) as $key=>$item)
