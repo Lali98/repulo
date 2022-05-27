@@ -21,7 +21,7 @@ $carries = new Carriers();
     </div>
     <main>
             <?php
-            foreach ($carries->getName(intval($_GET['cid'])) as $key=> $name)
+            foreach ($carries->getName(intval($_GET['cid'])) as $key=>$name)
             {?>
         <div>
             <a href="index.html">Főoldal</a> > <a href="legi_listaja.php">Légitársaságok Listája</a> > <a href="#"><?= $name['name'] ?></a>
@@ -33,7 +33,14 @@ $carries = new Carriers();
             ?>
         </h1>
         <div id="kep">
-            <img src="kep/EAlogo.png" alt="Endeavor Air Inc.">
+        <?php
+        foreach ($carries->getImgId(intval($_GET['cid'])) as $key=>$item)
+        {
+        ?>
+            <img src="kep/logok/<?= $item['id'].'.png' ?>" alt="<?= $item['name'] ?>">
+        <?php
+        }
+        ?>
         </div>
         <div id="adatok">
             <?php

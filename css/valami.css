@@ -1,0 +1,55 @@
+main div#valami a div{
+    border: 2px solid black;
+    float: left;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+body{
+    color: black;
+}
+
+div.keret{
+border: 1px black solid;
+height: 199px;
+width: 199px;
+float: left;
+display: flex;
+flex-direction: column;
+margin: 0 35px 0 0;
+padding: 10px;
+}
+
+img{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 15px;
+}
+
+
+h2{
+    margin-left: 20px;
+}
+
+main div{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+a{
+    color: var(--v_zold);
+}
+
+p{
+    margin: 0;
+}
+
+.szo{
+    font-weight: bolder;
+    font-size: 19px;
+    margin-top: 10px;
+}
