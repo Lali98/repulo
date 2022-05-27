@@ -14,7 +14,7 @@ body{
     color: black;
 }
 
-div#keret{
+div.keret{
 border: 2px black solid;
 height: 199px;
 width: 199px;
@@ -22,7 +22,7 @@ float: left;
 display: flex;
 flex-direction: column;
 justify-content: center;
-margin: 0 17px;
+margin: 0 35px 0 0;
 padding: 11px;
 }
 
@@ -41,8 +41,8 @@ h2{
 }
 
 main div{
-    margin-left: 20px;
     margin-top: 20px;
+    margin-left: 20px;
 }
 a{
     color: var(--v_zold);
