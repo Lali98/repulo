@@ -27,7 +27,7 @@ $carries = new Carriers();
             <?php
                 foreach ($carries->getCarriers() as $key=>$carrier)
                 {?>
-                    <li><a onclick="location.href='tars.php?cid=<?= $carrier['id'] ?>'"><?= $carrier['name'] ?></a></li>
+                    <li><a href="tars.php?cid=<?= $carrier['id'] ?>"><?= $carrier['name'] ?></a></li>
             <?php
                 }
             ?>
