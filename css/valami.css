@@ -15,26 +15,22 @@ body{
 }
 
 div.keret{
-border: 2px black solid;
+border: 1px black solid;
 height: 199px;
 width: 199px;
 float: left;
 display: flex;
 flex-direction: column;
-justify-content: center;
 margin: 0 35px 0 0;
-padding: 11px;
+padding: 10px;
 }
 
 img{
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 15px;
 }
 
-p{
-    font-weight: bold;
-    font-size: larger;
-}
 
 h2{
     margin-left: 20px;
@@ -46,4 +42,14 @@ main div{
 }
 a{
     color: var(--v_zold);
+}
+
+p{
+    margin: 0;
+}
+
+.szo{
+    font-weight: bolder;
+    font-size: 19px;
+    margin-top: 10px;
 }
