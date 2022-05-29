@@ -25,7 +25,7 @@ $carries = new Carriers();
         <div id="egesz">
             <div class="keret">
                 <p class="szo"><img src="kep/cup_gold.jpg" alt="Arany serleg" align="left">- <?= $carries->repterek()[0]['name'] ?></p>
-                <p><b>Az összes járat:</b><br>&nbsp;&nbsp;&nbsp; <?= $carries->repterek()[1]['OsszesJarat'] ?><br><br><b>Kód:</b><br>&nbsp;&nbsp;&nbsp; <?= $carries->repterek()[0]['code'] ?><br><br><b>Koordináták:</b><br>&nbsp;&nbsp;&nbsp;33°38'25.5"N&nbsp;84°25'11.5"W</p>
+                <p><b>Az összes járat:</b><br>&nbsp;&nbsp;&nbsp; <?= $carries->repterek()[0]['OsszesJarat'] ?><br><br><b>Kód:</b><br>&nbsp;&nbsp;&nbsp; <?= $carries->repterek()[0]['code'] ?><br><br><b>Koordináták:</b><br>&nbsp;&nbsp;&nbsp;33°38'25.5"N&nbsp;84°25'11.5"W</p>
             </div>
 
             <div class="keret">
