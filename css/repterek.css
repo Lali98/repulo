@@ -15,14 +15,14 @@ body{
 }
 
 div.keret{
-border: 1px black solid;
-height: 199px;
-width: 199px;
-float: left;
-display: flex;
-flex-direction: column;
-margin: 0 35px 0 0;
-padding: 10px;
+    border: 1px black solid;
+    height: 250px;
+    width: 210px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin: 0 28px 0 0;
+    padding: 10px;
 }
 
 img{

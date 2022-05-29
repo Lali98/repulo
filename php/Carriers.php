@@ -12,6 +12,7 @@ class Carriers extends Application
         'jaratokszama' => 'SELECT carriers.name, COUNT(airports_carrier.id) AS db FROM airports_carrier INNER JOIN carriers ON airports_carrier.carrier_id = carriers.id where carriers.id = {id} GROUP BY carriers.name',
         'max_code' => 'SELECT name, (SELECT airports.code FROM airports_carrier INNER JOIN airports ON airports_carrier.airport_id = airports.id INNER JOIN flights ON flights.airport_carriers_id = airports_carrier.id WHERE airports_carrier.carrier_id = carriers.id GROUP BY airports_carrier.carrier_id, airports.code ORDER BY SUM(flights.arr_flights) DESC LIMIT 1) AS "max_code" FROM carriers where id = {id}',
         'imgId' => 'select * from carriers where id = {id}',
+        'repterek' => 'select a.name, a.code, SUM(f.arr_flights) as OsszesJarat from airports_carrier ac inner join airports a on ac.airport_id = a.id inner join flights f on ac.id = f.airport_carriers_id group by a.name order by OsszesJarat desc limit 3;'
     );
 
     public function __construct()
@@ -106,5 +107,10 @@ class Carriers extends Application
             '{id}' => $carrierId
         );
         return $this->getResultList(strtr($this->sql['imgId'], $params));
+    }
+
+    public function repterek(): array
+    {
+        return $this->getResultList($this->sql['repterek']);
     }
 }
